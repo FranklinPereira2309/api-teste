@@ -3,6 +3,7 @@ const instrutores = require('./controladores/instrutores')
 
 const rotas = express();
 
+rotas.get('/', instrutores.bemVindo);
 rotas.get('/instrutores', instrutores.listarInstrutores);
 rotas.get('/instrutores/:id', instrutores.listarInstrutoresId)
 rotas.post('/instrutores', instrutores.cadastrarInstrutor);

@@ -108,11 +108,16 @@ const excluirInstrutor = (req, res) => {
 
 }
 
+const bemVindo = (req, res) => {
+    return res.send('Hello World!');
+}
+
 module.exports = {
     listarInstrutores,
     listarInstrutoresId,
     cadastrarInstrutor,
     atualizarInstrutor,
     atualizarStatusInstrutor,
-    excluirInstrutor
+    excluirInstrutor,
+    bemVindo
 }
